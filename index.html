@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
   <div id="canvas-container"></div>
@@ -51,107 +51,127 @@
     </div>
   </aside>
 
-  <!-- Full panels -->
+  <!-- Impacts Panel -->
   <div id="panel-impacts" class="panel">
-    <button class="close-panel">×</button>
     <div class="panel-content">
-      <h2>Environmental & Human Impacts</h2>
-      
-      <section>
-        <h3>🐟 Wildlife & Ecosystems</h3>
-        <p>Artificial light at night (ALAN) disrupts the natural rhythms of life that evolved under darkness for billions of years.</p>
-        <ul>
-          <li><strong>Sea turtles</strong> — Hatchlings crawl toward artificial lights instead of the moonlit ocean; millions die each year.</li>
-          <li><strong>Migratory birds</strong> — Disoriented by skyglow and building lights; massive collision mortality.</li>
-          <li><strong>Insects</strong> — Attracted to lights in fatal numbers; pollination and food webs suffer (studies suggest caterpillar declines of ~50% in lit areas).</li>
-          <li><strong>Bats, amphibians, coral</strong> — Foraging, reproduction and symbiotic relationships are altered.</li>
-        </ul>
-      </section>
+      <div class="panel-header">
+        <h2>Environmental &amp; Human Impacts</h2>
+        <button class="close-panel" aria-label="Close">×</button>
+      </div>
+      <div class="panel-body">
+        <div class="content-card">
+          <h3>🐟 Wildlife &amp; Ecosystems</h3>
+          <p>Artificial light at night (ALAN) disrupts the natural rhythms of life that evolved under darkness for billions of years.</p>
+          <ul>
+            <li><strong>Sea turtles</strong> — Hatchlings crawl toward artificial lights instead of the moonlit ocean; millions die each year.</li>
+            <li><strong>Migratory birds</strong> — Disoriented by skyglow and building lights; massive collision mortality.</li>
+            <li><strong>Insects</strong> — Attracted to lights in fatal numbers; pollination and food webs suffer (studies suggest caterpillar declines of ~50% in lit areas).</li>
+            <li><strong>Bats, amphibians, coral</strong> — Foraging, reproduction and symbiotic relationships are altered.</li>
+          </ul>
+        </div>
 
-      <section>
-        <h3>🧠 Human Health</h3>
-        <p>Light at night suppresses melatonin, the hormone that regulates our circadian clock.</p>
-        <ul>
-          <li>Disrupted sleep and circadian rhythms</li>
-          <li>Links to increased risk of obesity, diabetes, depression, and certain cancers (breast, prostate, colorectal)</li>
-          <li>Blue-rich LED light is particularly disruptive</li>
-        </ul>
-      </section>
+        <div class="content-card">
+          <h3>🧠 Human Health</h3>
+          <p>Light at night suppresses melatonin, the hormone that regulates our circadian clock.</p>
+          <ul>
+            <li>Disrupted sleep and circadian rhythms</li>
+            <li>Links to increased risk of obesity, diabetes, depression, and certain cancers (breast, prostate, colorectal)</li>
+            <li>Blue-rich LED light is particularly disruptive</li>
+          </ul>
+        </div>
 
-      <section>
-        <h3>⚡ Energy & Climate</h3>
-        <p>Outdoor and indoor lighting accounts for roughly <strong>15–20%</strong> of global electricity use and contributes several percent of CO₂ emissions. Much of this light is wasted upward into the sky.</p>
-      </section>
+        <div class="content-card">
+          <h3>⚡ Energy &amp; Climate</h3>
+          <p>Outdoor and indoor lighting accounts for roughly <strong>15–20%</strong> of global electricity use and contributes several percent of CO₂ emissions. Much of this light is wasted upward into the sky.</p>
+        </div>
 
-      <section>
-        <h3>🌌 The Night Sky</h3>
-        <p>One-third of humanity can no longer see the Milky Way. Star visibility is declining 7–10% per year in many places. Cultural heritage, astronomy, and simple wonder are being lost.</p>
-      </section>
+        <div class="content-card">
+          <h3>🌌 The Night Sky</h3>
+          <p>One-third of humanity can no longer see the Milky Way. Star visibility is declining 7–10% per year in many places. Cultural heritage, astronomy, and simple wonder are being lost.</p>
+        </div>
+      </div>
     </div>
   </div>
 
+  <!-- Solutions Panel -->
   <div id="panel-solutions" class="panel">
-    <button class="close-panel">×</button>
     <div class="panel-content">
-      <h2>Solutions for Darker Nights</h2>
-      <p class="lead">Light pollution is one of the easiest environmental problems to reduce — often with immediate, visible results.</p>
+      <div class="panel-header">
+        <h2>Solutions for Darker Nights</h2>
+        <button class="close-panel" aria-label="Close">×</button>
+      </div>
+      <div class="panel-body">
+        <p class="lead">Light pollution is one of the easiest environmental problems to reduce — often with immediate, visible results.</p>
 
-      <section>
-        <h3>1. Use light only where & when needed</h3>
-        <ul>
-          <li>Install lighting only for genuine safety or utility needs</li>
-          <li>Use the lowest brightness that still does the job</li>
-          <li>Timers, motion sensors and dimmers dramatically cut waste</li>
-        </ul>
-      </section>
+        <div class="content-card">
+          <h3>1. Use light only where &amp; when needed</h3>
+          <ul>
+            <li>Install lighting only for genuine safety or utility needs</li>
+            <li>Use the lowest brightness that still does the job</li>
+            <li>Timers, motion sensors and dimmers dramatically cut waste</li>
+          </ul>
+        </div>
 
-      <section>
-        <h3>2. Shield & direct light downward</h3>
-        <ul>
-          <li>Fully shielded fixtures prevent light from escaping upward or sideways</li>
-          <li>Aim lights carefully — no light trespass into windows or habitats</li>
-          <li>Mount lights as low as practical</li>
-        </ul>
-      </section>
+        <div class="content-card">
+          <h3>2. Shield &amp; direct light downward</h3>
+          <ul>
+            <li>Fully shielded fixtures prevent light from escaping upward or sideways</li>
+            <li>Aim lights carefully — no light trespass into windows or habitats</li>
+            <li>Mount lights as low as practical</li>
+          </ul>
+        </div>
 
-      <section>
-        <h3>3. Choose warmer, less blue spectra</h3>
-        <ul>
-          <li>Prefer amber / warm-white LEDs (≤ 2700–3000 K) at night</li>
-          <li>Blue-rich light scatters more and is more biologically disruptive</li>
-          <li>Color-tunable or filtered lighting is ideal</li>
-        </ul>
-      </section>
+        <div class="content-card">
+          <h3>3. Choose warmer, less blue spectra</h3>
+          <ul>
+            <li>Prefer amber / warm-white LEDs (≤ 2700–3000 K) at night</li>
+            <li>Blue-rich light scatters more and is more biologically disruptive</li>
+            <li>Color-tunable or filtered lighting is ideal</li>
+          </ul>
+        </div>
 
-      <section>
-        <h3>4. Support Dark Sky places & policy</h3>
-        <ul>
-          <li>Over 320 certified Dark Sky places exist worldwide</li>
-          <li>Advocate for lighting ordinances, responsible urban design, and protected dark corridors</li>
-          <li>Organizations: <a href="https://www.darksky.org/" target="_blank" rel="noopener">DarkSky International</a>, IUCN Dark Skies, local astronomy clubs</li>
-        </ul>
-      </section>
+        <div class="content-card">
+          <h3>4. Support Dark Sky places &amp; policy</h3>
+          <ul>
+            <li>Over 320 certified Dark Sky places exist worldwide</li>
+            <li>Advocate for lighting ordinances, responsible urban design, and protected dark corridors</li>
+            <li>Organizations: <a href="https://www.darksky.org/" target="_blank" rel="noopener">DarkSky International</a>, IUCN Dark Skies, local astronomy clubs</li>
+          </ul>
+        </div>
 
-      <section>
-        <h3>5. Personal actions</h3>
-        <ul>
-          <li>Close curtains at night / use blackout if needed</li>
-          <li>Switch outdoor lights to motion-activated or timers</li>
-          <li>Talk to neighbors and local government about better lighting</li>
-          <li>Experience a truly dark sky — it changes how you feel about the night</li>
-        </ul>
-      </section>
+        <div class="content-card">
+          <h3>5. Personal actions</h3>
+          <ul>
+            <li>Close curtains at night / use blackout if needed</li>
+            <li>Switch outdoor lights to motion-activated or timers</li>
+            <li>Talk to neighbors and local government about better lighting</li>
+            <li>Experience a truly dark sky — it changes how you feel about the night</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 
+  <!-- About Panel -->
   <div id="panel-about" class="panel">
-    <button class="close-panel">×</button>
     <div class="panel-content">
-      <h2>About This Project</h2>
-      <p>This interactive Digital Earth is an educational experience designed to make the invisible visible: the growing blanket of artificial light that is changing ecosystems, human health, and our connection to the cosmos.</p>
-      <p>It was built as an open, immersive web experience using Three.js and public Earth observation inspired assets.</p>
-      <p><strong>Repo:</strong> <a href="https://github.com/trextrinorex/digital-earth-light-pollution" target="_blank" rel="noopener">trextrinorex/digital-earth-light-pollution</a></p>
-      <p class="credits">Textures adapted from NASA Visible Earth / three-globe examples. Facts synthesized from recent peer-reviewed literature and reports by DarkSky International, IUCN, Nature Reviews, and others.</p>
+      <div class="panel-header">
+        <h2>About This Project</h2>
+        <button class="close-panel" aria-label="Close">×</button>
+      </div>
+      <div class="panel-body">
+        <div class="content-card">
+          <p>This interactive Digital Earth is an educational experience designed to make the invisible visible: the growing blanket of artificial light that is changing ecosystems, human health, and our connection to the cosmos.</p>
+          <p>It was built as an open, immersive web experience using Three.js and public Earth observation inspired assets.</p>
+        </div>
+
+        <div class="content-card">
+          <h3>Repository</h3>
+          <p><a href="https://github.com/trextrinorex/digital-earth-light-pollution" target="_blank" rel="noopener">trextrinorex/digital-earth-light-pollution</a></p>
+        </div>
+
+        <p class="credits">Textures adapted from NASA Visible Earth / three-globe examples. Facts synthesized from recent peer-reviewed literature and reports by DarkSky International, IUCN, Nature Reviews Earth &amp; Environment, and others.</p>
+      </div>
     </div>
   </div>
 
